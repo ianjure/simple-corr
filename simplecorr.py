@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-from streamlit_extras.app_logo import add_logo
 import pandas as pd
 from pandas.api.types import is_string_dtype
 from pandas.api.types import is_numeric_dtype
@@ -35,8 +34,6 @@ hide_menu_style = """
     """
 
 st.markdown(hide_menu_style, unsafe_allow_html = True)
-
-add_logo("logo.jpg", height=300)
 
 st.title('SimpleCorr')
 st.write('A simple tool for checking correlation!')
