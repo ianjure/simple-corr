@@ -49,7 +49,7 @@ if index:
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
     list_file_name = uploaded_file.name.split(".")
-    file_name = list_file_name[0]
+    file_name = list_file_name[0].title()
 
     if index_value == True:
         data.drop(columns=data.columns[0], axis=1, inplace=True)
