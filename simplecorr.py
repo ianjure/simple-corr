@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import io
 
-im = Image.open("misc\logo.png")
+im = Image.open("misc/logo.png")
 
 # Page Configuration
 st.set_page_config (
