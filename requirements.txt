@@ -2,4 +2,4 @@ streamlit
 streamlit-extras
 seaborn
 pandas
-IO
+io
