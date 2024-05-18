@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import io
 
-im = Image.open("misc/logo.png")
+icon = Image.open("misc/logo.png")
 
 # Page Configuration
 st.set_page_config (
     page_title = "SimpleCorr",
-    page_icon = im,
+    page_icon = icon,
     initial_sidebar_state = "collapsed"
     )
 
