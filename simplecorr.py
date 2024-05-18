@@ -48,6 +48,8 @@ if index:
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
+    list_file_name = uploaded_file.name.split(".")
+    file_name = list_file_name[0]
 
     if index_value == True:
         data.drop(columns=data.columns[0], axis=1, inplace=True)
@@ -68,7 +70,7 @@ if uploaded_file is not None:
     my_matrix = dataframe.corr(method="spearman").round(2)
 
     fig = plt.figure(figsize=(10,8)) #width, height
-    plt.title(uploaded_file.name + "Correlation Matrix")
+    plt.title(file_name + " Correlation Matrix")
     sns.heatmap(my_matrix, cmap="Blues", vmin=0, vmax=1,annot=True, fmt="0.2f", square=True, cbar=False)
 
     st.write(fig)
