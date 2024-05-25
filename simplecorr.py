@@ -70,7 +70,7 @@ if uploaded_file is not None:
     my_matrix = dataframe.corr(method="spearman").round(2)
 
     fig = plt.figure(figsize=(10,8)) #width, height
-    plt.title(file_name + " Correlation Matrix", size=15, pad=20, style="bold")
+    plt.title(file_name + " Correlation Matrix", size=15, pad=20, fontweight="bold")
     sns.heatmap(my_matrix, cmap="Blues", vmin=0, vmax=1,annot=True, fmt="0.2f", square=True, cbar=False)
 
     st.write(fig)
