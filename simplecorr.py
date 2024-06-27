@@ -75,7 +75,7 @@ if uploaded_file is not None:
 
     st.write(fig)
 
-    fn = 'plot_simplecorr.png'
+    fn = file_name + '_simplecorr.png'
     img = io.BytesIO()
     plt.savefig(img, format='png')
  
